@@ -8,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import com.spring.demo.domain.Student;
 import com.spring.demo.persistence.StudentRepository;
 
+// to kill port run: npx kill-port 8080 
+
 @Controller 
 public class DemoGraphQLController {
     private final StudentRepository studentRepository;
