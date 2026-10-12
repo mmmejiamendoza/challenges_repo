@@ -1,0 +1,16 @@
+type StudentResponse {
+    id: ID
+    firstName: String
+    lastName: String
+    email: String
+}
+
+type Query {
+    greeting(name: String): String 
+    
+}
+
+type Mutation {
+    createStudent(firstName: String!, lastName: String!, email: String!): StudentResponse
+    deleteStudent(id: ID!): Boolean
+}
